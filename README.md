@@ -68,8 +68,8 @@
 1. Clone o repositório ou Download ZIP:
 
    ```bash
-   $ git clone https://github.com/YagoLopesMartins/react-dashboard-admin-nest.git
-   cd react-dashboard-admin-nest
+   $ git clone url_projeto
+   cd diretorio_projeto
    ```
 
 2. Instale as dependências:
@@ -81,7 +81,7 @@
             $ cd backend
             $ npm install ou npm i
             $ npm run build
-            $ npm run start:prod
+            $ npm run start:dev
           ```
             - 2.2.1.1 Acesse o diretorio postman e import os endpoints de testes
             - 2.2.1.2 URI: `http://localhost:3000/`
@@ -95,6 +95,11 @@
             $ npm run dev
           ```
             - Acese: http://localhost:5173/login (Entre com E-mail e senha cadastrados item 2.2.1.3)
+            - Rotas:
+              - http://localhost:5173/users/list/
+              - http://localhost:5173/users/add/
+              - http://localhost:5173/users/edit/
+              - http://localhost:5173/home
 
     - EM BREVE com DOCKER
 

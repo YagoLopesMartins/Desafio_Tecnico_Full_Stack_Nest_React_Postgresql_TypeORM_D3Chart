@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+#  api:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    environment:
+#      - DATABASE_HOST=${DATABASE_HOST}
+#      - DATABASE_PORT=${DATABASE_PORT}
+#      - DATABASE_USERNAME=${DATABASE_USERNAME}
+#      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+#      - DATABASE_NAME=${DATABASE_NAME}
+#    ports:
+#      - "3000:3000"
+#    depends_on:
+#      - database
+#    volumes:
+#      - .:/app
+#      - /app/node_modules
+
+  postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgre
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+      - ./create-db.sql:/docker-entrypoint-initdb.d/create_database.sql
+
+#  pgadmin:
+#    image: dpage/pgadmin4
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+#      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+#    ports:
+#      - "8080:80"
+#    depends_on:
+#      - database
+
+#volumes:
+#  postgres_data:
