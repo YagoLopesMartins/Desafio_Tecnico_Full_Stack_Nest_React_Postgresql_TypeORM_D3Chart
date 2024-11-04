@@ -28,11 +28,11 @@
 
     - **Cadastro de usuários**
 
-        1. **Nome** - _Apenas Letras_
-        2. **Sobrenome** - _Apenas Letras_
-        3. **E-mail** - _Apenas e-mails válidos_
-        4. **Senha** - _Alfanuméricos de 6 dígitos
-        5. **Nível de acesso** - enum (Admins e Comuns) _Apenas Letras__
+        1. **Nome** - Apenas Letras_
+        2. **Sobrenome** - Apenas Letras_
+        3. **E-mail** - Apenas e-mails válidos_
+        4. **Senha** - Alfanuméricos de 6 dígitos
+        5. **Nível de acesso** - enum (Admins e Comuns) Apenas Letras
 
 
     - **Edição de Usuário**
