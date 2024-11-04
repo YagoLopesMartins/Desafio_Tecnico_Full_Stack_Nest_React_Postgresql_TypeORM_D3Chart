@@ -80,7 +80,7 @@
           ```bash
             $ cd backend
             $ npm install ou npm i
-             - Altere o arquivo .env (variáveis do projeto segue emcemplo .env.example)
+             - Altere o arquivo .env (variáveis do projeto segue exemplo: .env.example)
             $ npm run build
             $ npm run start:dev
           ```
